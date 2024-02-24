@@ -390,8 +390,6 @@ Wire Bus Line
 	9100 1950 9100 1050
 Wire Bus Line
 	9100 1050 6600 1050
-Wire Bus Line
-	6600 1050 6600 2950
 Entry Wire Line
 	9250 2000 9150 2100
 Entry Wire Line
@@ -490,6 +488,211 @@ Wire Wire Line
 	12200 2800 12100 2800
 Wire Wire Line
 	12100 2600 12200 2600
+$Comp
+L imported:TB002-500-02BE J6
+U 1 1 65C1851A
+P 2500 10050
+F 0 "J6" H 2792 9685 50  0000 C CNN
+F 1 "TB002-500-02BE" H 2792 9776 50  0000 C CNN
+F 2 "TB00250002BE" H 3150 10150 50  0001 L CNN
+F 3 "" H 3150 10050 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screw type, 5.00, horizontal, 2 poles, CUI Blue, slotted screw, PCB mount" H 3150 9950 50  0001 L CNN "Description"
+F 5 "10.4" H 3150 9850 50  0001 L CNN "Height"
+F 6 "490-TB002-500-02BE" H 3150 9750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/TB002-500-02BE?qs=vLWxofP3U2x9716kcgva%2Fw%3D%3D" H 3150 9650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 3150 9550 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB002-500-02BE" H 3150 9450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2500 10050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 65CD07C8
+P 5900 1250
+F 0 "R3" H 5968 1296 50  0000 L CNN
+F 1 "68000" H 5968 1205 50  0000 L CNN
+F 2 "" V 5940 1240 50  0001 C CNN
+F 3 "~" H 5900 1250 50  0001 C CNN
+	1    5900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2550 5900 2400
+Wire Wire Line
+	5900 2100 5900 2000
+Wire Wire Line
+	5900 1550 5900 1400
+$Comp
+L power:+BATT #PWR04
+U 1 1 65CDB0B0
+P 5250 1000
+F 0 "#PWR04" H 5250 850 50  0001 C CNN
+F 1 "+BATT" H 5265 1173 50  0000 C CNN
+F 2 "" H 5250 1000 50  0001 C CNN
+F 3 "" H 5250 1000 50  0001 C CNN
+	1    5250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1100 5250 1100
+Wire Wire Line
+	5250 1100 5250 1000
+$Comp
+L power:GND #PWR05
+U 1 1 65CDFBD8
+P 5900 3350
+F 0 "#PWR05" H 5900 3100 50  0001 C CNN
+F 1 "GND" H 5905 3177 50  0000 C CNN
+F 2 "" H 5900 3350 50  0001 C CNN
+F 3 "" H 5900 3350 50  0001 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2850 5900 3050
+Entry Wire Line
+	6600 1900 6500 2000
+Entry Wire Line
+	6600 2950 6500 3050
+Wire Wire Line
+	6500 3050 5900 3050
+Connection ~ 5900 3050
+Wire Wire Line
+	5900 3050 5900 3350
+Wire Wire Line
+	6500 2000 5900 2000
+Connection ~ 5900 2000
+Wire Wire Line
+	5900 2000 5900 1850
+$Comp
+L Device:R_US R7
+U 1 1 65CEFBD4
+P 7150 1500
+F 0 "R7" H 7218 1546 50  0000 L CNN
+F 1 "1.1" H 7218 1455 50  0000 L CNN
+F 2 "" V 7190 1490 50  0001 C CNN
+F 3 "~" H 7150 1500 50  0001 C CNN
+	1    7150 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 65CFDF0F
+P 5900 1700
+F 0 "R4" H 5968 1746 50  0000 L CNN
+F 1 "68000" H 5968 1655 50  0000 L CNN
+F 2 "" V 5940 1690 50  0001 C CNN
+F 3 "~" H 5900 1700 50  0001 C CNN
+	1    5900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R5
+U 1 1 65D0C02D
+P 5900 2250
+F 0 "R5" H 5968 2296 50  0000 L CNN
+F 1 "68000" H 5968 2205 50  0000 L CNN
+F 2 "" V 5940 2240 50  0001 C CNN
+F 3 "~" H 5900 2250 50  0001 C CNN
+	1    5900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 65D14866
+P 5900 2700
+F 0 "R6" H 5968 2746 50  0000 L CNN
+F 1 "68000" H 5968 2655 50  0000 L CNN
+F 2 "" V 5940 2690 50  0001 C CNN
+F 3 "~" H 5900 2700 50  0001 C CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 65D29F9C
+P 7150 1650
+F 0 "R?" H 7218 1696 50  0000 L CNN
+F 1 "1.1" H 7218 1605 50  0000 L CNN
+F 2 "" V 7190 1640 50  0001 C CNN
+F 3 "~" H 7150 1650 50  0001 C CNN
+	1    7150 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 65D334B2
+P 7150 1300
+F 0 "R?" H 7218 1346 50  0000 L CNN
+F 1 "1.1" H 7218 1255 50  0000 L CNN
+F 2 "" V 7190 1290 50  0001 C CNN
+F 3 "~" H 7150 1300 50  0001 C CNN
+	1    7150 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 65D361B8
+P 7150 1800
+F 0 "R?" H 7218 1846 50  0000 L CNN
+F 1 "1.1" H 7218 1755 50  0000 L CNN
+F 2 "" V 7190 1790 50  0001 C CNN
+F 3 "~" H 7150 1800 50  0001 C CNN
+	1    7150 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 65D38E0A
+P 7150 2150
+F 0 "R?" H 7218 2196 50  0000 L CNN
+F 1 "1.1" H 7218 2105 50  0000 L CNN
+F 2 "" V 7190 2140 50  0001 C CNN
+F 3 "~" H 7150 2150 50  0001 C CNN
+	1    7150 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 65D3BA5D
+P 7150 1950
+F 0 "R?" H 7218 1996 50  0000 L CNN
+F 1 "1.1" H 7218 1905 50  0000 L CNN
+F 2 "" V 7190 1940 50  0001 C CNN
+F 3 "~" H 7150 1950 50  0001 C CNN
+	1    7150 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 2150 7000 1950
+Connection ~ 7000 1950
+Wire Wire Line
+	7000 1950 7000 1800
+Connection ~ 7000 1800
+Wire Wire Line
+	7000 1800 7000 1650
+Connection ~ 7000 1650
+Wire Wire Line
+	7000 1650 7000 1500
+Connection ~ 7000 1500
+Wire Wire Line
+	7000 1500 7000 1300
+Wire Wire Line
+	7300 1300 7300 1500
+Connection ~ 7300 1950
+Wire Wire Line
+	7300 1950 7300 2150
+Connection ~ 7300 1800
+Wire Wire Line
+	7300 1800 7300 1950
+Connection ~ 7300 1650
+Wire Wire Line
+	7300 1650 7300 1800
+Connection ~ 7300 1500
+Wire Wire Line
+	7300 1500 7300 1650
+Wire Bus Line
+	6600 1050 6600 2950
 Wire Wire Line
 	9250 750  9850 750 
 Wire Bus Line
@@ -504,21 +707,4 @@ Wire Bus Line
 	12300 2500 12300 4450
 Wire Bus Line
 	9400 4600 11550 4600
-$Comp
-L imported:TB002-500-02BE J?
-U 1 1 65C1851A
-P 2500 10050
-F 0 "J?" H 2792 9685 50  0000 C CNN
-F 1 "TB002-500-02BE" H 2792 9776 50  0000 C CNN
-F 2 "TB00250002BE" H 3150 10150 50  0001 L CNN
-F 3 "" H 3150 10050 50  0001 L CNN
-F 4 "Fixed Terminal Blocks Terminal block, screw type, 5.00, horizontal, 2 poles, CUI Blue, slotted screw, PCB mount" H 3150 9950 50  0001 L CNN "Description"
-F 5 "10.4" H 3150 9850 50  0001 L CNN "Height"
-F 6 "490-TB002-500-02BE" H 3150 9750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/TB002-500-02BE?qs=vLWxofP3U2x9716kcgva%2Fw%3D%3D" H 3150 9650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "CUI Devices" H 3150 9550 50  0001 L CNN "Manufacturer_Name"
-F 9 "TB002-500-02BE" H 3150 9450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2500 10050
-	-1   0    0    1   
-$EndComp
 $EndSCHEMATC

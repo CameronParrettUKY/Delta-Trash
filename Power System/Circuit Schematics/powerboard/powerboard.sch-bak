@@ -490,12 +490,6 @@ Wire Wire Line
 	12200 2800 12100 2800
 Wire Wire Line
 	12100 2600 12200 2600
-$Sheet
-S 5950 3250 950  600 
-U 65C086DF
-F0 "power regulation section" 50
-F1 "file65C086DE.sch" 50
-$EndSheet
 Wire Wire Line
 	9250 750  9850 750 
 Wire Bus Line
@@ -510,4 +504,21 @@ Wire Bus Line
 	12300 2500 12300 4450
 Wire Bus Line
 	9400 4600 11550 4600
+$Comp
+L imported:TB002-500-02BE J?
+U 1 1 65C1851A
+P 2500 10050
+F 0 "J?" H 2792 9685 50  0000 C CNN
+F 1 "TB002-500-02BE" H 2792 9776 50  0000 C CNN
+F 2 "TB00250002BE" H 3150 10150 50  0001 L CNN
+F 3 "" H 3150 10050 50  0001 L CNN
+F 4 "Fixed Terminal Blocks Terminal block, screw type, 5.00, horizontal, 2 poles, CUI Blue, slotted screw, PCB mount" H 3150 9950 50  0001 L CNN "Description"
+F 5 "10.4" H 3150 9850 50  0001 L CNN "Height"
+F 6 "490-TB002-500-02BE" H 3150 9750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/TB002-500-02BE?qs=vLWxofP3U2x9716kcgva%2Fw%3D%3D" H 3150 9650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Devices" H 3150 9550 50  0001 L CNN "Manufacturer_Name"
+F 9 "TB002-500-02BE" H 3150 9450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2500 10050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

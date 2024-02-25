@@ -1,0 +1,1 @@
+****Since the software used lacks some components, the BTS7960 and HC-05 Bluetooth modules were all created by ourselves. The circuit cannot be encapsulated now, it is only used as a schematic to help understand the circuit.****

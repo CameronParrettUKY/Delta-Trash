@@ -30,15 +30,15 @@ while True:
         R4.off()
         Sig1.on() # Tell control sys we are charging
         LED.on() #Indicate Charging
-        elif:
-            R1.on()
-            R2.on()
-            R3.on() # Exit Standby Mode
-            R4.on()
-            LED.off() 
-            Sig1.off()
-    if Vdivide_value <15
+    else:
+        R1.on()
+        R2.on()
+        R3.on() # Exit Standby Mode
+        R4.on()
+        LED.off() 
+        Sig1.off()
+    if Vdivide_value < 15:
         Sig2.on() # Tell control sys battery is low
-        elif:
-            Sig2.off() # Battery no longer low
+    else:
+        Sig2.off() # Battery no longer low
             

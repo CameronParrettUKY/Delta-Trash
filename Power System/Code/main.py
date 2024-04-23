@@ -1,6 +1,5 @@
 from machine import Pin, ADC,I2C,UART
 from time import sleep
-from picoslave import *
 Vdivide = ADC(Pin(28))
 Ishunt = ADC(Pin(27)) #Define Pins & setup realay 1 to enable 5v
 LED = Pin("LED", Pin.OUT)
@@ -15,6 +14,7 @@ Sig2 = Pin(5,Pin.OUT)
 #uart = UART(1, baudrate=9600, tx=Pin(4),rx=Pin(5))
 #uart.init(bits=8, parity=None,stop=1)
 while True:
+    sleep(.05)
     Ishunt_Value = Ishunt.read_u16()/21845 #Grab current reading
     Vdivide_value = Vdivide.read_u16()/21845  #Grab voltage reading
     print("battery Volts Out:") #print to console for debug
@@ -23,7 +23,7 @@ while True:
     print("Charge Current in:")
     print(Ishunt_Value/(1.1/6))
     Ishunt_Value=Ishunt_Value/(1.1/6) #calculate real current
-    if Ishunt_Value > 1: # Are we charging?
+    if Ishunt_Value > .9: # Are we charging?
         R1.off()
         R2.off()  #Enter Standby Mode
         R3.off()

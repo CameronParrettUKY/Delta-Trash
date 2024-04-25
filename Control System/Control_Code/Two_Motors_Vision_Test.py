@@ -1,3 +1,5 @@
+# This is only a test code to test the connection between the vision system and the control system.
+# This code has been integrated into the APP_Control_Speed file.
 from machine import Pin, PWM, UART
 import utime
 
